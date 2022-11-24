@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+}
+h1 {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+}
+
+.piano {
+  width: 550px;
+  height: 600px;
+  margin: auto;
+}
+
+.containerTeclasNegras,
+.containerTeclasBlancas {
+  display: flex;
+  width: 100%;
+}
+
+.teclaBlanca {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 10%;
+  height: 400px;
+  flex-grow: 1;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+.containerTeclasNegras {
+  position: relative;
+  margin-left: 45px;
+  top: -66.7%;
+  gap: 5.5em;
+}
+.teclaNegra {
+  background-color: black;
+  border: none;
+  color: white;
+  width: 68px;
+  height: 250px;
+}
+.subContainer-N1 .teclaNegra:nth-child(2),
+.subContainer-N2 .teclaNegra:nth-child(2),
+.subContainer-N2 .teclaNegra:nth-child(3) {
+  margin-left: 8px;
+}
